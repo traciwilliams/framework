@@ -1,24 +1,93 @@
-//box sizing property for all elements 
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
-} 
+* {
+    box-sizing: border-box;
+}
 
-//basic css reset
+body {
+    font-size: 16px;
+    line-height: 1.2em;
+    color: white;
+    background-color: black;
+}
+
+html {
+    font-size: 16px;
+    background-color: red;
+}
+
 h1,
 p,
-div,
 ul,
 li {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-//container to hold rows and columns
 .container {
-	max-width: 100%;
-	margin: 0 auto;
-	text-align: left;
+    //max-width: 960px;
+    max-width: 1140px;
+    margin: 0 auto;
+    //text-align: left;
+    //background-color: green;
 }
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    background-color: coral;
+}
+
+.row {
+    margin-bottom: 25px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+}
+
+
+
