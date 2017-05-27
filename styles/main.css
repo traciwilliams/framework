@@ -1,3 +1,24 @@
-body {
-	background-color: grey;
+//box sizing property for all elements 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+} 
+
+//basic css reset
+h1,
+p,
+div,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+//container to hold rows and columns
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: left;
 }
